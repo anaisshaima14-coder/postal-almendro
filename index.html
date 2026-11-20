@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#cec899","tertiary-fixed":"#efe0ce","outline-variant":"#dac1c2","surface-container":"#ffe9ea","secondary-fixed":"#eae4b4","error":"#ba1a1a","on-primary-container":"#eb8490","on-tertiary-fixed-variant":"#4e4538","secondary-container":"#e7e1b1","primary-container":"#681d2b","surface-container-high":"#ffe1e3","on-secondary-fixed":"#1f1c01","outline":"#877273","inverse-surface":"#541f27","primary-fixed-dim":"#ffb2b9","surface-dim":"#ffced2","surface-container-low":"#fff0f0","inverse-primary":"#ffb2b9","surface-variant":"#ffd9dc","surface-bright":"#fff8f7","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#4b4824","on-error-container":"#93000a","surface":"#fff8f7","inverse-on-surface":"#ffeced","tertiary-fixed-dim":"#d2c5b3","on-primary":"#ffffff","on-error":"#ffffff","tertiary-container":"#3f372a","on-surface":"#390a14","on-background":"#390a14","error-container":"#ffdad6","primary-fixed":"#ffdadc","on-primary-fixed":"#400010","primary":"#4b0617","on-secondary":"#ffffff","surface-tint":"#99424f","on-tertiary-fixed":"#211b0f","secondary":"#636039","tertiary":"#292216","on-primary-fixed-variant":"#7b2b39","on-tertiary-container":"#aca08f","background":"#fff8f7","surface-container-lowest":"#ffffff","on-secondary-container":"#68643d","on-surface-variant":"#544244","surface-container-highest":"#ffd9dc"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"3rem","space-lg":"2rem","space-sm":"1rem","margin":"1.5rem","gutter":"1.5rem","space-md":"1.5rem","space-xs":"0.5rem"},"fontFamily":{"headline-md":["Playfair Display"],"headline-lg":["Playfair Display"],"label-md":["Montserrat"],"body-md":["Montserrat"],"caption":["Montserrat"],"body-lg":["Montserrat"],"headline-display":["Playfair Display"],"headline-display-mobile":["Playfair Display"],"title-sm":["Montserrat"]},"fontSize":{"headline-md":["22px",{"lineHeight":"30px","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"caption":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-display":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-display-mobile":["30px",{"lineHeight":"38px","letterSpacing":"0em","fontWeight":"600"}],"title-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(74,23,32,0.04)]"><div class="h-20 max-w-[1100px] mx-auto px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm cursor-pointer select-none" id="brand-link"><img alt="Postal. Almendro Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGYPLbj5aemc_T-gMZ32EFTWaTQKN0BfRJWZZxcpkzeqYhuvvoV1VARLmqNjxnoQz5dCDCnMtzTAq5KjnLOVbMEZ8Te30_yhDtWdiwAniIAswb6g_LpJMD4CT_qdvCYs6_fZncczAUrhWfVMQ-4vkLM_Av2R7EHbKikimtQJIyQIjivRlBYWrlZLw2ruRNg7pgXE8VqEjwtAVu51giy5UeWm5z4V6uEUbpjAVOuXI"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">Postal.</span><span class="font-caption text-caption text-secondary tracking-normal">Almendro · Cosmética natural de Granada</span></div></div><nav class="flex items-center gap-space-md" id="main-nav"><a aria-current="page" class="nav-tab transition-colors py-space-xs text-primary border-b-2 border-primary font-label-md cursor-pointer select-none" data-tab="generador" href="#generador">Generador</a><a class="nav-tab font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs cursor-pointer select-none border-b-2 border-transparent" data-tab="resultado" href="#resultado">Resultado</a><a class="nav-tab font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs cursor-pointer select-none border-b-2 border-transparent" data-tab="historial" href="#historial">Historial</a></nav><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface leading-tight">Taller Granada</span><span class="font-caption text-caption text-secondary">Albaicín Botánico</span></div><button class="w-8 h-8 rounded-full bg-primary hover:bg-primary-container flex items-center justify-center shadow-[0_1px_4px_rgba(74,23,32,0.08)] transition-all cursor-pointer active:scale-95" id="user-profile-btn" title="Perfil de Taller" type="button"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></button></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="max-w-[1100px] mx-auto px-space-md py-space-lg"><div class="flex flex-col w-full text-on-surface">
+<!-- Toast de Notificación -->
+<div aria-live="polite" class="fixed top-24 right-6 z-50 pointer-events-none transition-all duration-300 opacity-0 transform translate-y-[-12px]" id="toast-notification">
+<div class="flex items-center gap-3 bg-tertiary-container text-on-tertiary px-4 py-3 rounded-xl shadow-lg border border-outline-variant/30 text-body-md">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-label-md text-sm text-surface-container-lowest" id="toast-message">Notificación</span>
+</div>
+</div>
+<!-- VISTA 1: GENERADOR (Activa por defecto) -->
+<div class="view-panel flex flex-col gap-space-lg" id="view-generador">
+<!-- Encabezado de la página -->
+<header class="flex flex-col gap-space-xs text-left max-w-2xl">
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">nature</span>
+<span class="font-caption text-caption tracking-wider uppercase font-semibold">Taller Albaicín · Herramienta Editorial</span>
+</div>
+<h1 class="font-headline-display text-headline-display text-primary leading-tight">
+        Crear nuevo post
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-normal">
+        Genera publicaciones honestas y botánicas para las redes de Almendro en menos de un minuto.
+      </p>
+</header>
+<!-- Layout a 2 columnas con ritmo de 32px (space-lg) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Columna Principal: Formulario de Generación -->
+<section class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_8px_24px_-4px_rgba(74,23,32,0.06),0_2px_6px_-1px_rgba(74,23,32,0.04)] flex flex-col gap-space-lg">
+<!-- 1. Campo: Tema del post -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-sm text-title-sm text-primary flex items-center justify-between" for="post-topic">
+<span>1. Tema de la publicación</span>
+<span class="font-caption text-caption text-secondary font-medium">Requerido</span>
+</label>
+<p class="font-body-md text-body-md text-on-surface-variant mb-1">
+              ¿De qué queremos hablar hoy? (ingrediente, proceso artesanal, nuevo lote...)
+            </p>
+<div class="relative">
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary placeholder:text-outline-variant shadow-sm transition-all resize-y border border-transparent focus:border-secondary" id="post-topic" placeholder="Ejemplo: Nueva tanda de jabón de almendras dulces macerado con lavanda silvestre de la Alpujarra. Explicar el proceso de secado de 4 semanas en bandejas de madera." rows="4">Nueva tanda de jabón de almendras dulces macerado con lavanda de la Alpujarra</textarea>
+<div class="flex items-center justify-between mt-2 px-1">
+<span class="font-caption text-caption text-outline">Precisión botánica activa</span>
+<span class="font-caption text-caption text-secondary font-medium" id="char-counter">77 caracteres</span>
+</div>
+</div>
+</div>
+<!-- 2. Selector: Red Social -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-sm text-title-sm text-primary">
+              2. Red social y formato
+            </label>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">
+              Adaptamos la cadencia del texto, etiquetas y saltos de párrafo a la plataforma elegida.
+            </p>
+<div aria-label="Selecciona la red social" class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" role="radiogroup">
+<!-- Opción 1: Instagram (Activo) -->
+<button aria-checked="true" class="channel-pill flex flex-col text-left p-4 rounded-xl bg-secondary text-on-secondary shadow-sm transition-all cursor-pointer relative hover:brightness-105 active:scale-[0.98] ring-2 ring-secondary" data-label="Instagram" data-radio-group="channel" type="button">
+<div class="flex items-center justify-between w-full mb-2">
+<span class="font-label-md text-label-md">Instagram</span>
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</div>
+<span class="font-caption text-caption opacity-90 subtext">Feed pausado y carrusel botánico sensorial</span>
+</button>
+<!-- Opción 2: TikTok -->
+<button aria-checked="false" class="channel-pill flex flex-col text-left p-4 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all cursor-pointer active:scale-[0.98] ring-0" data-label="TikTok" data-radio-group="channel" type="button">
+<div class="flex items-center justify-between w-full mb-2">
+<span class="font-label-md text-label-md">TikTok</span>
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant subtext">Guion visual dinámico con voz de taller</span>
+</button>
+<!-- Opción 3: LinkedIn -->
+<button aria-checked="false" class="channel-pill flex flex-col text-left p-4 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all cursor-pointer active:scale-[0.98] ring-0" data-label="LinkedIn" data-radio-group="channel" type="button">
+<div class="flex items-center justify-between w-full mb-2">
+<span class="font-label-md text-label-md">LinkedIn</span>
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant subtext">Historia de artesanía, ciencia y formulación local</span>
+</button>
+</div>
+</div>
+<!-- 3. Selector: Objetivo -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-sm text-title-sm text-primary">
+              3. Intención u objetivo principal
+            </label>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">
+              Define la llamada a la acción final y el foco narrativo.
+            </p>
+<div aria-label="Selecciona el objetivo" class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" role="radiogroup">
+<!-- Vender -->
+<button aria-checked="false" class="goal-pill flex flex-col text-left p-4 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all cursor-pointer active:scale-[0.98] ring-0" data-label="Vender" data-radio-group="goal" type="button">
+<span class="font-label-md text-label-md mb-1">Vender</span>
+<span class="font-caption text-caption text-on-surface-variant subtext">Lanzamientos, avisos de nuevo stock y tienda</span>
+</button>
+<!-- Informar (Activo) -->
+<button aria-checked="true" class="goal-pill flex flex-col text-left p-4 rounded-xl bg-secondary text-on-secondary shadow-sm transition-all cursor-pointer active:scale-[0.98] ring-2 ring-secondary" data-label="Informar" data-radio-group="goal" type="button">
+<span class="font-label-md text-label-md mb-1">Informar</span>
+<span class="font-caption text-caption opacity-90 subtext">Propiedades botánicas y cuidado consciente</span>
+</button>
+<!-- Crear comunidad -->
+<button aria-checked="false" class="goal-pill flex flex-col text-left p-4 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all cursor-pointer active:scale-[0.98] ring-0" data-label="Crear comunidad" data-radio-group="goal" type="button">
+<span class="font-label-md text-label-md mb-1">Crear comunidad</span>
+<span class="font-caption text-caption text-on-surface-variant subtext">Intimidad del taller y preguntas abiertas</span>
+</button>
+</div>
+</div>
+<!-- 4. Selector: Tono botánico -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-sm text-title-sm text-primary">
+              4. Voz de Almendro (Tono)
+            </label>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">
+              La cercanía y calidez de nuestras palabras nunca debe sonar automatizada.
+            </p>
+<div aria-label="Selecciona el tono" class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" role="radiogroup">
+<!-- Cercano (Activo) -->
+<button aria-checked="true" class="tone-pill flex flex-col text-left p-4 rounded-xl bg-secondary text-on-secondary shadow-sm transition-all cursor-pointer active:scale-[0.98] ring-2 ring-secondary" data-label="Cercano" data-radio-group="tone" type="button">
+<span class="font-label-md text-label-md mb-1">Cercano</span>
+<span class="font-caption text-caption opacity-90 subtext">Cálido y honesto, como una carta a una amiga</span>
+</button>
+<!-- Inspirador -->
+<button aria-checked="false" class="tone-pill flex flex-col text-left p-4 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all cursor-pointer active:scale-[0.98] ring-0" data-label="Inspirador" data-radio-group="tone" type="button">
+<span class="font-label-md text-label-md mb-1">Inspirador</span>
+<span class="font-caption text-caption text-on-surface-variant subtext">Sierra Nevada, bienestar silvestre y sosiego</span>
+</button>
+<!-- Divertido -->
+<button aria-checked="false" class="tone-pill flex flex-col text-left p-4 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all cursor-pointer active:scale-[0.98] ring-0" data-label="Divertido" data-radio-group="tone" type="button">
+<span class="font-label-md text-label-md mb-1">Divertido</span>
+<span class="font-caption text-caption text-on-surface-variant subtext">Fresco, espontáneo y anécdotas de mortero</span>
+</button>
+</div>
+</div>
+<!-- Bloque de Acción Principal -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-secondary">verified</span>
+<span class="font-caption text-caption">Modo artesanal activado (revisión botánica)</span>
+</div>
+<!-- BOTÓN PRINCIPAL EXCLUSIVO: color #681D2B (bg-primary-container) -->
+<button class="w-full sm:w-auto h-14 px-8 bg-primary-container hover:brightness-110 text-on-primary font-label-md text-label-md rounded-xl shadow-[0_8px_20px_-4px_rgba(104,29,43,0.3)] transition-all duration-200 flex items-center justify-center gap-space-xs cursor-pointer active:scale-[0.98] disabled:opacity-75 disabled:cursor-not-allowed" id="btn-generate" type="button">
+<span id="btn-generate-text">Generar publicación</span>
+<span class="material-symbols-outlined text-[20px]" id="btn-generate-icon">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Columna Lateral: Consejo de Taller y Resumen Matérico -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Tarjeta: Postal Botánica Inspiracional -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_8px_24px_-4px_rgba(74,23,32,0.06),0_2px_6px_-1px_rgba(74,23,32,0.04)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase tracking-wider text-secondary font-semibold">Inspiración de Sierra Nevada</span>
+<button class="text-secondary hover:text-primary transition-colors cursor-pointer" id="refresh-quote-btn" title="Renovar cita botánica" type="button">
+<span class="material-symbols-outlined text-[20px]">local_florist</span>
+</button>
+</div>
+<div class="w-full h-44 rounded-lg overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Editorial close up photography of dried lavender sprigs, raw sweet almond kernels and a handmade cold process soap bar with botanical stamp on a rustic textured linen cloth with warm soft Granada morning sunlight and muted earthy tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo6zatsfdZn2EBS8trAPfMzV6TCfEIr0dLyfIDbaTex3FTg8wk3gR1P8ywmkSltvyBA1LxtdKdnSgnoZWvGzdZCjG4aT_2eI80M-XYsBtxC-ELEfWzWaMHzOk3iD0NnAco2kfNqj_3Dpe28JzNlXmyznXrwXHDuigtUVZ6SsqKxUcYm_hF_lvucFECZMqHzYHrja0dig3l99Q39OCFiNFeWRrF30sGvQGWj4MlU3I"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+<p class="font-body-md text-body-md text-primary italic font-headline-md leading-relaxed mt-1" id="quote-text">
+            «La cosmética natural no busca la prisa del algoritmo, sino la memoria del agua y el olor a romero en la piel limpia.»
+          </p>
+</div>
+<!-- Tarjeta: Consejo de Taller -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs transition-all hover:shadow-sm">
+<div class="flex items-center gap-space-xs text-primary mb-1">
+<span class="material-symbols-outlined text-[20px]">tips_and_updates</span>
+<span class="font-label-md text-label-md text-primary">Consejo del maestro jabonero</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="tip-text">
+            Para Instagram, nombra siempre la procedencia del lote (ej. <em>almendras de las faldas de Sierra Nevada</em>). La denominación de origen artesanal multiplica por tres el valor percibido del post.
+          </p>
+<div class="mt-2 pt-space-xs border-t-0 flex items-center justify-between text-secondary">
+<span class="font-caption text-caption font-semibold">Taller Albaicín nº 4</span>
+<span class="font-caption text-caption">Lote activo: #L-429</span>
+</div>
+</div>
+<!-- Tarjeta: Resumen de Parámetros Seleccionados -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_8px_24px_-4px_rgba(74,23,32,0.06),0_2px_6px_-1px_rgba(74,23,32,0.04)] flex flex-col gap-space-sm">
+<h3 class="font-title-sm text-title-sm text-primary">Configuración activa</h3>
+<ul class="flex flex-col gap-2 font-caption text-caption text-on-surface-variant">
+<li class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-md transition-colors hover:bg-surface-container">
+<span class="font-medium text-on-surface">Canal de salida</span>
+<span class="text-secondary font-semibold" id="summary-channel">Instagram</span>
+</li>
+<li class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-md transition-colors hover:bg-surface-container">
+<span class="font-medium text-on-surface">Objetivo editorial</span>
+<span class="text-secondary font-semibold" id="summary-goal">Informar</span>
+</li>
+<li class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-md transition-colors hover:bg-surface-container">
+<span class="font-medium text-on-surface">Voz y tono</span>
+<span class="text-secondary font-semibold" id="summary-tone">Cercano</span>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+<!-- VISTA 2: RESULTADO (Oculta dinámicamente) -->
+<div class="view-panel hidden flex-col gap-space-lg" id="view-resultado">
+<header class="flex flex-col gap-space-xs text-left max-w-2xl">
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span class="font-caption text-caption tracking-wider uppercase font-semibold">Publicación Generada · Taller Botánico</span>
+</div>
+<h1 class="font-headline-display text-headline-display text-primary leading-tight">
+      Publicación lista para compartir
+    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-normal">
+      Revisa, copia o ajusta la propuesta artesanal antes de publicarla en tus redes.
+    </p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-md shadow-[0_8px_24px_-4px_rgba(74,23,32,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-surface-container pb-3">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-secondary/15 text-secondary font-label-md text-xs font-semibold uppercase tracking-wider" id="result-channel-badge">Instagram</span>
+<span class="text-outline-variant">•</span>
+<span class="font-caption text-caption text-on-surface-variant" id="result-meta-badge">Tono Cercano · Informar</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-xs transition-all cursor-pointer active:scale-95" id="btn-copy-result" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copy-btn-text">Copiar texto</span>
+</button>
+</div>
+<div class="font-body-md text-on-surface leading-relaxed whitespace-pre-line bg-surface-container-low/40 p-4 rounded-lg border border-surface-container" id="generated-post-content">🌿 El secreto de nuestra nueva tanda: calma y paciencia de cuatro semanas.
+
+Al pie de Sierra Nevada, las flores silvestres de lavanda se mezclan despacio con el aceite virgen de almendras dulces granadinas. Sin prisas, dejamos reposar cada pastilla en bandejas de madera noble del Albaicín para que madure con la brisa de la sierra.
+
+El resultado es una espuma untuosa y densa, libre de sulfatos y respetuosa con el microbioma natural de tu piel.
+
+¿Has probado ya la textura viva de un cosmético recién macerado? Te leemos aquí abajo en el taller. 👇✨
+
+#AlmendroCosmetica #GranadaArtesana #JabonNatural #Albaicin #SierraNevada #CosmeticaConsciente</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-variant text-primary font-label-md text-sm transition-all cursor-pointer flex items-center gap-1.5" id="btn-edit-again" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Modificar parámetros</span>
+</button>
+<button class="px-5 py-2.5 rounded-xl bg-primary-container hover:brightness-110 text-on-primary font-label-md text-sm transition-all cursor-pointer shadow-sm flex items-center gap-1.5 active:scale-95" id="btn-save-draft" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+<span>Guardar en Historial</span>
+</button>
+</div>
+</div>
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-3">
+<h4 class="font-title-sm text-title-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">tune</span>
+          Ajuste fino de estilo
+        </h4>
+<p class="font-body-md text-sm text-on-surface-variant">Puedes añadir emojis botánicos adicionales o acortar el cierre con un clic.</p>
+<div class="flex flex-col gap-2 mt-1">
+<button class="w-full py-2 px-3 text-left rounded-lg bg-surface-container-lowest hover:bg-surface-container font-label-md text-xs text-primary transition-colors flex items-center justify-between cursor-pointer quick-tweak" data-tweak="short" type="button">
+<span>Versión más concisa (-30% texto)</span>
+<span class="material-symbols-outlined text-[16px]">compress</span>
+</button>
+<button class="w-full py-2 px-3 text-left rounded-lg bg-surface-container-lowest hover:bg-surface-container font-label-md text-xs text-primary transition-colors flex items-center justify-between cursor-pointer quick-tweak" data-tweak="hashtags" type="button">
+<span>Optimizar etiquetas de Granada</span>
+<span class="material-symbols-outlined text-[16px]">tag</span>
+</button>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- VISTA 3: HISTORIAL (Oculta dinámicamente) -->
+<div class="view-panel hidden flex-col gap-space-lg" id="view-historial">
+<header class="flex flex-col gap-space-xs text-left max-w-2xl">
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span class="font-caption text-caption tracking-wider uppercase font-semibold">Registro Editorial</span>
+</div>
+<h1 class="font-headline-display text-headline-display text-primary leading-tight">
+      Historial de publicaciones
+    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-normal">
+      Textos y conceptos generados recientemente para las redes de Almendro.
+    </p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="history-items-container">
+<!-- Entrada 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm border border-surface-container flex flex-col justify-between gap-4 transition-all hover:shadow-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-xs font-semibold">
+<span class="px-2 py-0.5 rounded bg-secondary/15 text-secondary">Instagram</span>
+<span class="text-outline">Hoy, 10:14</span>
+</div>
+<h4 class="font-title-sm text-primary text-base line-clamp-1">Jabón de almendras y lavanda</h4>
+<p class="font-body-md text-xs text-on-surface-variant line-clamp-3">«Al pie de Sierra Nevada, las flores silvestres de lavanda se mezclan despacio con el aceite virgen de almendras dulces...»</p>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<span class="font-caption text-caption text-secondary font-medium">Objetivo: Informar</span>
+<button class="text-primary hover:text-secondary font-label-md text-xs cursor-pointer history-reopen-btn" data-topic="Jabón de almendras y lavanda de la Alpujarra" type="button">Ver post →</button>
+</div>
+</div>
+<!-- Entrada 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm border border-surface-container flex flex-col justify-between gap-4 transition-all hover:shadow-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-xs font-semibold">
+<span class="px-2 py-0.5 rounded bg-secondary/15 text-secondary">TikTok</span>
+<span class="text-outline">Ayer, 18:30</span>
+</div>
+<h4 class="font-title-sm text-primary text-base line-clamp-1">Corte en frío de jabones artesanales</h4>
+<p class="font-body-md text-xs text-on-surface-variant line-clamp-3">«El sonido crujiente del alambre atravesando un bloque de jabón de romero tras 30 días de reposo. Mira qué textura...»</p>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<span class="font-caption text-caption text-secondary font-medium">Objetivo: Crear comunidad</span>
+<button class="text-primary hover:text-secondary font-label-md text-xs cursor-pointer history-reopen-btn" data-topic="Corte en frío de jabones artesanales con alambre en el taller" type="button">Ver post →</button>
+</div>
+</div>
+<!-- Entrada 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm border border-surface-container flex flex-col justify-between gap-4 transition-all hover:shadow-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-xs font-semibold">
+<span class="px-2 py-0.5 rounded bg-secondary/15 text-secondary">LinkedIn</span>
+<span class="text-outline">Hace 3 días</span>
+</div>
+<h4 class="font-title-sm text-primary text-base line-clamp-1">Por qué rechazamos los plásticos</h4>
+<p class="font-body-md text-xs text-on-surface-variant line-clamp-3">«Emprender en cosmética ecológica desde Granada implica tomar decisiones radicales sobre la cadena de embalaje...»</p>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<span class="font-caption text-caption text-secondary font-medium">Objetivo: Vender ética</span>
+<button class="text-primary hover:text-secondary font-label-md text-xs cursor-pointer history-reopen-btn" data-topic="Por qué rechazamos los plásticos en Almendro Cosmética" type="button">Ver post →</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main><footer class="w-full bg-surface-container-low py-space-lg shadow-[0_-1px_6px_rgba(74,23,32,0.02)]"><div class="max-w-[1100px] mx-auto px-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex flex-col items-center md:items-start"><span class="font-headline-md text-headline-md text-primary">Almendro</span><span class="font-caption text-caption text-on-surface-variant">Formulaciones botánicas artesanales elaboradas al pie de Sierra Nevada.</span></div><div class="flex items-center gap-space-md text-on-surface-variant font-caption text-caption"><a class="footer-link hover:text-primary transition-colors cursor-pointer" data-info="Cuaderno Botánico: Apuntes de formulación y botánica del taller del Albaicín." href="#cuaderno">Cuaderno Botánico</a><a class="footer-link hover:text-primary transition-colors cursor-pointer" data-info="Ingredientes Locales: Almendras de Granada, lavanda alpujarreña y cera ecológica." href="#ingredientes">Ingredientes Locales</a><a class="footer-link hover:text-primary transition-colors cursor-pointer" data-info="Ética de Marca: 100% biodegradable, sin sulfatos ni microplásticos sintéticos." href="#etica">Ética de Marca</a></div></div></footer>
+<script>
+  (function() {
+    // ESTADO DE LA APLICACIÓN
+    const appState = {
+      channel: 'Instagram',
+      goal: 'Informar',
+      tone: 'Cercano',
+      topic: 'Nueva tanda de jabón de almendras dulces macerado con lavanda de la Alpujarra',
+      activeTab: 'generador'
+    };
+
+    // FUNCIÓN TOAST DE FEEDBACK
+    const toast = document.getElementById('toast-notification');
+    const toastMessage = document.getElementById('toast-message');
+    const toastIcon = document.getElementById('toast-icon');
+    let toastTimer = null;
+
+    function showToast(message, icon = 'check_circle') {
+      if (!toast) return;
+      if (toastTimer) clearTimeout(toastTimer);
+      toastMessage.textContent = message;
+      toastIcon.textContent = icon;
+      toast.classList.remove('opacity-0', 'translate-y-[-12px]');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-[-12px]');
+      }, 2600);
+    }
+
+    // 1. NAVEGACIÓN ENTRE TABS / PANELES
+    const navTabs = document.querySelectorAll('.nav-tab');
+    const viewPanels = {
+      generador: document.getElementById('view-generador'),
+      resultado: document.getElementById('view-resultado'),
+      historial: document.getElementById('view-historial')
+    };
+
+    function switchView(tabKey) {
+      if (!viewPanels[tabKey]) return;
+      appState.activeTab = tabKey;
+
+      // Actualizar links de navegación
+      navTabs.forEach(tab => {
+        const isCurrent = tab.dataset.tab === tabKey;
+        if (isCurrent) {
+          tab.setAttribute('aria-current', 'page');
+          tab.classList.remove('text-on-surface-variant', 'border-transparent');
+          tab.classList.add('text-primary', 'border-primary', 'font-label-md');
+        } else {
+          tab.removeAttribute('aria-current');
+          tab.classList.remove('text-primary', 'border-primary');
+          tab.classList.add('text-on-surface-variant', 'border-transparent');
+        }
+      });
+
+      // Mostrar / Ocultar vistas
+      Object.keys(viewPanels).forEach(key => {
+        if (key === tabKey) {
+          viewPanels[key].classList.remove('hidden');
+          viewPanels[key].classList.add('flex');
+        } else {
+          viewPanels[key].classList.add('hidden');
+          viewPanels[key].classList.remove('flex');
+        }
+      });
+
+      // Sincronizar badges si vamos a resultado
+      if (tabKey === 'resultado') {
+        updateResultViewContent();
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    navTabs.forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        e.preventDefault();
+        const tabTarget = tab.dataset.tab;
+        switchView(tabTarget);
+      });
+    });
+
+    // Logo vuelve al generador
+    const brandLink = document.getElementById('brand-link');
+    if (brandLink) {
+      brandLink.addEventListener('click', () => switchView('generador'));
+    }
+
+    // 2. SELECTORES EXCLUSIVOS (Radio Groups)
+    function setupRadioGroup(groupName, summaryElementId, stateKey) {
+      const pills = document.querySelectorAll(`button[data-radio-group="${groupName}"]`);
+      const summaryEl = document.getElementById(summaryElementId);
+      
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pills.forEach(p => {
+            p.setAttribute('aria-checked', 'false');
+            p.classList.remove('bg-secondary', 'text-on-secondary', 'shadow-sm', 'ring-2', 'ring-secondary', 'brightness-105');
+            p.classList.add('bg-surface-container-low', 'text-on-surface', 'ring-0');
+            const subtext = p.querySelector('.subtext');
+            if (subtext) {
+              subtext.classList.remove('opacity-90');
+              subtext.classList.add('text-on-surface-variant');
+            }
+          });
+
+          pill.setAttribute('aria-checked', 'true');
+          pill.classList.remove('bg-surface-container-low', 'text-on-surface', 'ring-0');
+          pill.classList.add('bg-secondary', 'text-on-secondary', 'shadow-sm', 'ring-2', 'ring-secondary');
+          const activeSubtext = pill.querySelector('.subtext');
+          if (activeSubtext) {
+            activeSubtext.classList.remove('text-on-surface-variant');
+            activeSubtext.classList.add('opacity-90');
+          }
+
+          const labelVal = pill.getAttribute('data-label') || pill.querySelector('.font-label-md')?.textContent.trim() || '';
+          if (summaryEl) {
+            summaryEl.textContent = labelVal;
+          }
+          appState[stateKey] = labelVal;
+          showToast(`Seleccionado: ${labelVal}`, 'tune');
+        });
+      });
+    }
+
+    setupRadioGroup('channel', 'summary-channel', 'channel');
+    setupRadioGroup('goal', 'summary-goal', 'goal');
+    setupRadioGroup('tone', 'summary-tone', 'tone');
+
+    // 3. TEXTAREA 'Tema de la publicación' CON CONTADOR DINÁMICO
+    const topicTextarea = document.getElementById('post-topic');
+    const charCounter = document.getElementById('char-counter');
+
+    function updateCharCount() {
+      if (!topicTextarea || !charCounter) return;
+      const count = topicTextarea.value.length;
+      charCounter.textContent = `${count} caracteres`;
+      appState.topic = topicTextarea.value;
+    }
+
+    if (topicTextarea) {
+      updateCharCount();
+      topicTextarea.addEventListener('input', updateCharCount);
+      topicTextarea.addEventListener('change', updateCharCount);
+    }
+
+    // 4. BOTÓN PRINCIPAL 'Generar publicación'
+    const generateBtn = document.getElementById('btn-generate');
+    const btnGenerateText = document.getElementById('btn-generate-text');
+    const btnGenerateIcon = document.getElementById('btn-generate-icon');
+
+    function generateBotanicalCopy(topic, channel, goal, tone) {
+      const intro = tone === 'Cercano' 
+        ? `🌿 Desde la mesa de trabajo de nuestro taller en el Albaicín:\n\n`
+        : tone === 'Inspirador' 
+        ? `🏔️ El sosiego de Sierra Nevada vive en cada fórmula que elaboramos despacio:\n\n`
+        : `✨ Manos con harina de almendra, mortero listo y aromática fresca en Granada:\n\n`;
+
+      const core = `${topic}. Elaborado con aceites botánicos de primera presión y macerado en reposo respetando el calendario artesanal granadino.\n\n`;
+
+      const closing = goal === 'Vender'
+        ? `Ya puedes reservar tu lote numerado directamente en nuestra botica online o visitando el taller en Granada.`
+        : goal === 'Informar'
+        ? `Un proceso 100% libre de aditivos sintéticos que cuida la barrera lipídica y devuelve la armonía a tu piel.`
+        : `¿Qué aroma silvestre de Andalucía te transporta de inmediato a la tranquilidad del campo? Cuéntanoslo aquí abajo.`;
+
+      const hashtags = channel === 'Instagram'
+        ? `\n\n#AlmendroCosmetica #GranadaNatural #CosmeticaArtesana #SierraNevada #Albaicin #EcoSkin`
+        : channel === 'TikTok'
+        ? `\n\n#AsmrBotanico #SkincareArtesanal #Granada #TallerAlbaicin #CosmeticaLimpia`
+        : `\n\n#FormulacionLocal #CosmeticaSostenible #ArtesaniaEspanola #AlbaicinGranada`;
+
+      return `${intro}${core}${closing}${hashtags}`;
+    }
+
+    function updateResultViewContent() {
+      const resultBadge = document.getElementById('result-channel-badge');
+      const metaBadge = document.getElementById('result-meta-badge');
+      const resultTextEl = document.getElementById('generated-post-content');
+
+      if (resultBadge) resultBadge.textContent = appState.channel;
+      if (metaBadge) metaBadge.textContent = `Tono ${appState.tone} · ${appState.goal}`;
+      if (resultTextEl) {
+        resultTextEl.textContent = generateBotanicalCopy(appState.topic, appState.channel, appState.goal, appState.tone);
+      }
+    }
+
+    if (generateBtn) {
+      generateBtn.addEventListener('click', () => {
+        if (!topicTextarea.value.trim()) {
+          showToast('Por favor introduce un tema para el post', 'warning');
+          topicTextarea.focus();
+          return;
+        }
+
+        generateBtn.disabled = true;
+        btnGenerateText.textContent = 'Macerando texto con IA botánica...';
+        btnGenerateIcon.textContent = 'autorenew';
+        btnGenerateIcon.classList.add('animate-spin');
+
+        setTimeout(() => {
+          btnGenerateText.textContent = '¡Publicación redactada!';
+          btnGenerateIcon.textContent = 'check';
+          btnGenerateIcon.classList.remove('animate-spin');
+
+          showToast('Publicación generada con éxito', 'check_circle');
+
+          setTimeout(() => {
+            btnGenerateText.textContent = 'Generar publicación';
+            btnGenerateIcon.textContent = 'arrow_forward';
+            generateBtn.disabled = false;
+            switchView('resultado');
+          }, 900);
+        }, 1200);
+      });
+    }
+
+    // BOTONES EN VISTA RESULTADO
+    const btnCopyResult = document.getElementById('btn-copy-result');
+    const copyBtnText = document.getElementById('copy-btn-text');
+    if (btnCopyResult) {
+      btnCopyResult.addEventListener('click', () => {
+        const textToCopy = document.getElementById('generated-post-content')?.textContent || '';
+        navigator.clipboard?.writeText(textToCopy).then(() => {
+          copyBtnText.textContent = '¡Copiado al portapapeles!';
+          showToast('Texto copiado al portapapeles', 'content_copy');
+          setTimeout(() => {
+            copyBtnText.textContent = 'Copiar texto';
+          }, 2000);
+        }).catch(() => {
+          showToast('Texto listo para usar', 'content_copy');
+        });
+      });
+    }
+
+    const btnEditAgain = document.getElementById('btn-edit-again');
+    if (btnEditAgain) {
+      btnEditAgain.addEventListener('click', () => switchView('generador'));
+    }
+
+    const btnSaveDraft = document.getElementById('btn-save-draft');
+    if (btnSaveDraft) {
+      btnSaveDraft.addEventListener('click', () => {
+        showToast('Guardado en el historial de publicaciones', 'bookmark_added');
+      });
+    }
+
+    // Quick tweaks en resultado
+    const tweakBtns = document.querySelectorAll('.quick-tweak');
+    tweakBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tweak = btn.dataset.tweak;
+        const resultTextEl = document.getElementById('generated-post-content');
+        if (!resultTextEl) return;
+        if (tweak === 'short') {
+          resultTextEl.textContent = `🌿 ${appState.topic}.\n\nFormulación en frío con botánicos de Sierra Nevada que cuida la barrera de tu piel. Sin prisas, sin aditivos.\n\n#AlmendroCosmetica #Granada`;
+          showToast('Versión sintetizada aplicada', 'compress');
+        } else if (tweak === 'hashtags') {
+          if (!resultTextEl.textContent.includes('#GranadaArtesana')) {
+            resultTextEl.textContent += '\n#GranadaArtesana #AlbaicinTradicion #SierraNevadaBotanica';
+          }
+          showToast('Etiquetas de Granada ampliadas', 'tag');
+        }
+      });
+    });
+
+    // 5. INTERACTIVIDAD EN HISTORIAL Y ENLACES SECUNDARIOS
+    const historyReopenBtns = document.querySelectorAll('.history-reopen-btn');
+    historyReopenBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const topic = btn.getAttribute('data-topic');
+        if (topic && topicTextarea) {
+          topicTextarea.value = topic;
+          updateCharCount();
+          showToast('Parámetros cargados en el editor', 'check');
+          switchView('generador');
+        }
+      });
+    });
+
+    const userProfileBtn = document.getElementById('user-profile-btn');
+    if (userProfileBtn) {
+      userProfileBtn.addEventListener('click', () => {
+        showToast('Perfil: Taller Albaicín nº 4 (Granada)', 'account_circle');
+      });
+    }
+
+    const quoteBtn = document.getElementById('refresh-quote-btn');
+    const quoteText = document.getElementById('quote-text');
+    const quotes = [
+      '«La cosmética natural no busca la prisa del algoritmo, sino la memoria del agua y el olor a romero en la piel limpia.»',
+      '«El aceite de almendra macerado al sol de Sierra Nevada guarda la serenidad de nuestra tierra.»',
+      '«Elaborar con las manos en el Albaicín es un compromiso de verdad con cada gota que toca tu piel.»'
+    ];
+    let quoteIndex = 0;
+    if (quoteBtn && quoteText) {
+      quoteBtn.addEventListener('click', () => {
+        quoteIndex = (quoteIndex + 1) % quotes.length;
+        quoteText.textContent = quotes[quoteIndex];
+        showToast('Cita botánica renovada', 'local_florist');
+      });
+    }
+
+    // Enlaces de footer
+    const footerLinks = document.querySelectorAll('.footer-link');
+    footerLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const info = link.dataset.info || link.textContent;
+        showToast(info, 'info');
+      });
+    });
+
+  })();
+</script></body></html>
